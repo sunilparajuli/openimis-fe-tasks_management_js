@@ -77,6 +77,10 @@ const DEFAULT_CONFIG = {
     { key: 'tasksManagement.taskSearcher', ref: TaskSearcher },
     { key: 'tasksManagement.taskDetailsPage', ref: TaskDetailsPage },
     { key: 'tasksManagement.fetchTask', ref: fetchTask },
+    {
+      key: 'core.notificationLink.tasks_management.task',
+      ref: (notification) => `${ROUTE_TASK_MANAGEMENT}/${notification.entityId}`,
+    },
   ],
 
 
